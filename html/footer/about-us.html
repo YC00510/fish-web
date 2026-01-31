@@ -66,13 +66,31 @@ footer a { color:#fff; display:block; margin:3px 0; }
 .social-icons a { display:inline-block; margin-right:10px; }
 .social-icons a img { width:24px; height:24px; vertical-align:middle; }
 
-/* -------- 浮動按鈕 -------- */
+
+/* 浮動按鈕 */
 .floating-btn {
-  position:fixed; right:20px; bottom:150px; background:#00c300; color:#fff;
-  padding:12px 20px; border-radius:25px; font-weight:bold; cursor:pointer;
-  box-shadow:0 4px 8px rgba(0,0,0,0.3); transition: background 0.3s, transform 0.2s;
+  position: fixed;
+  right: 20px;
+  bottom: 150px;
+
+  width: 100px;
+  height: auto;
+
+  background: none;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
 }
-.floating-btn:hover { background:#009900; transform: translateY(-2px); }
+
+.floating-btn:hover {
+  transform: translateY(-4px);
+  opacity: 0.9;
+}
+
 
 /* -------- 響應式 -------- */
 @media (max-width: 768px) {
@@ -218,9 +236,8 @@ footer a { color:#fff; display:block; margin:3px 0; }
 </footer>
 
 <!-- 浮動聯絡按鈕 -->
-<a href="#" class="floating-btn">
-  <img src="https://YC00510.github.io/fish-web/image/3785EB91-53D5-4B7B-8D6F-4C24A9FD626D.png" alt="contact" style="width:20px; vertical-align:middle; margin-right:6px;">
-  
+<a href="https://line.me/" target="_blank">
+  <img src="https://YC00510.github.io/fish-web/image/3785EB91-53D5-4B7B-8D6F-4C24A9FD626D.png" class="floating-btn" alt="line">
 </a>
 
 <!-- JS 功能 -->
