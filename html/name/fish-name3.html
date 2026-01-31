@@ -167,11 +167,27 @@ footer a { color:#fff; display:block; margin:3px 0; }
 
 /* 浮動按鈕 */
 .floating-btn {
-  position:fixed; right:20px; bottom:150px; background:#00c300; color:#fff;
-  padding:12px 20px; border-radius:25px; font-weight:bold; cursor:pointer;
-  box-shadow:0 4px 8px rgba(0,0,0,0.3); transition: background 0.3s, transform 0.2s;
+  position: fixed;
+  right: 20px;
+  bottom: 150px;
+
+  width: 100px;
+  height: auto;
+
+  background: none;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
 }
-.floating-btn:hover { background:#009900; transform: translateY(-2px); }
+
+.floating-btn:hover {
+  transform: translateY(-4px);
+  opacity: 0.9;
+}
 
 /* 響應式 */
 @media (max-width: 768px) {
