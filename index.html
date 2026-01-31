@@ -124,11 +124,22 @@ footer a { color:#fff; display:block; margin:3px 0; }
 
 /* 浮動按鈕 */
 .floating-btn {
-  position:fixed; right:20px; bottom:150px; background:#00c300; color:#fff;
-  padding:12px 20px; border-radius:25px; font-weight:bold; cursor:pointer;
-  box-shadow:0 4px 8px rgba(0,0,0,0.3); transition: background 0.3s, transform 0.2s;
+  position: fixed;
+  right: 20px;
+  bottom: 150px;
+
+  width: 100px;
+  height: auto;
+
+  background: none;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
 }
-.floating-btn:hover { background:#009900; transform: translateY(-2px); }
 
 /* 響應式 */
 @media (max-width: 768px) {
@@ -141,7 +152,7 @@ footer a { color:#fff; display:block; margin:3px 0; }
 }
 
 
-/* ===== 手機版 Header ===== */
+/* 手機版 Header */
 .menu-toggle {
   display:none;
   font-size:26px;
@@ -162,7 +173,7 @@ footer a { color:#fff; display:block; margin:3px 0; }
 
 /* 展開狀態 */
 .mobile-menu.show {
-  max-height: 500px;      /* 足夠裝下選單 */
+  max-height: 500px;      
   padding: 15px;
 }
 
@@ -341,14 +352,13 @@ footer a { color:#fff; display:block; margin:3px 0; }
     <h4>社群連結</h4>
     <a href="https://www.facebook.com/profile.php?id=61555847716122"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="FB"></a>
     <a href="https://www.instagram.com/zz.aqua.tw?fbclid=IwY2xjawPnH2FleHRuA2FlbQIxMABicmlkETExMjVzOUxibnZHOVZOb3lZc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHkKcuKgiVYETFBe3t2Tz7DoJeR7DrEQZ7KZER-MTv539Nca7QJFao5yt77wO_aem_hOfuhTdbvwHk-7lJqS7NAg"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="IG"></a>
-    <a href="https://www.google.com/maps/place/%E6%97%A5%E6%97%A5%E6%B0%B4%E6%97%8F%E6%BC%81%E5%A0%B4%EF%BC%88%E4%BF%AE%E8%BB%8A%E5%BB%A0%E5%85%A7%EF%BC%89%E2%80%94%E5%AD%94%E9%9B%80%E9%AD%9A%2F%E9%8C%A6%E9%AF%89%2F%E9%87%91%E9%AD%9A%2F%E7%87%88%E9%AD%9A%2F%E9%BE%8D%E9%AD%9A%2F%E8%A7%80%E8%B3%9E%E9%AD%9A/data=!4m2!3m1!1s0x0:0x7b5f188bdb001bab?sa=X&ved=1t:2428&hl=zh-Hant-TW&ictx=111"><img src="map.png" alt="地圖"></a>
+    <a href="https://www.google.com/maps/place/%E6%97%A5%E6%97%A5%E6%B0%B4%E6%97%8F%E6%BC%81%E5%A0%B4%EF%BC%88%E4%BF%AE%E8%BB%8A%E5%BB%A0%E5%85%A7%EF%BC%89%E2%80%94%E5%AD%94%E9%9B%80%E9%AD%9A%2F%E9%8C%A6%E9%AF%89%2F%E9%87%91%E9%AD%9A%2F%E7%87%88%E9%AD%9A%2F%E9%BE%8D%E9%AD%9A%2F%E8%A7%80%E8%B3%9E%E9%AD%9A/data=!4m2!3m1!1s0x0:0x7b5f188bdb001bab?sa=X&ved=1t:2428&hl=zh-Hant-TW&ictx=111"><img src="https://YC00510.github.io/fish-web/image/map.png" alt="地圖"></a>
   </div>
 </footer>
 
 <!-- 浮動聯絡按鈕 -->
-<a href="#" class="floating-btn">
-  <img src="image/line.png" alt="contact" style="width:20px; vertical-align:middle; margin-right:6px;">
-  
+<a href="https://line.me/" target="_blank">
+  <img src="https://YC00510.github.io/fish-web/image/3785EB91-53D5-4B7B-8D6F-4C24A9FD626D.png" class="floating-btn" alt="line">
 </a>
 
 
