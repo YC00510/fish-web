@@ -1,1 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>服務條款</title>
+<link rel="icon" href="https://files.catbox.moe/fwiva1.png" type="image/png">
 
+<style>
+/* -------- 全域 -------- */
+body { margin:0; font-family: 'Noto Sans', sans-serif; background:#f6f5f3; color:#333; line-height:1.6; }
+a { text-decoration:none; color:inherit; }
+
+/* -------- Header -------- */
+.main-header {
+  display:flex; justify-content:space-between; align-items:center; gap:20px;
+  padding:10px 20px; background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  position:sticky; top:0; z-index:999; border-bottom-left-radius:15px; border-bottom-right-radius:15px; flex-wrap: wrap;
+}
+.header-left, .header-center, .header-right { display:flex; align-items:center; gap:15px; }
+.header-center { flex:1; justify-content:center; margin:5px 0; }
+.home-btn img { width:36px; height:36px; cursor:pointer; }
+
+/* Dropdown */
+.dropdown { position: relative; }
+.drop-btn {
+  background:none; border:none; cursor:pointer; display:flex; align-items:center; gap:5px;
+  font-size:16px; font-weight:bold;
+}
+.drop-btn img { width:28px; height:28px; object-fit:contain; }
+.drop-btn::after { content:'▼'; font-size:12px; margin-left:5px; transition: transform 0.3s; }
+.drop-btn.active::after { transform: rotate(180deg); }
+.drop-menu {
+  position:absolute; top:40px; left:0; background:#fff; border:1px solid #ddd; border-radius:8px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.2); width:200px; display:none; opacity:0;
+  transform:translateY(-10px); transition: all 0.3s ease; z-index:1000; overflow:hidden;
+}
+.drop-menu.show { display:block; opacity:1; transform:translateY(0); }
+.drop-menu ul { list-style:none; margin:0; padding:10px 0; }
+.drop-menu ul li a { display:block; padding:8px 15px; color:#333; }
+.drop-menu ul li a:hover { background:#00c300; color:#fff; }
+
+/* 搜尋框 
+.search-box { display:flex; align-items:center; border:1px solid #ddd; border-radius:25px; overflow:hidden; height:36px; }
+.search-box input { border:none; padding:0 10px; outline:none; height:100%; font-size:14px; }
+.search-box button { border:none; background:#d1e0e0; cursor:pointer; height:100%; padding:0 10px; display:flex; align-items:center; justify-content:center; transition: background 0.3s; }
+.search-box button:hover { background:#004d4d; }
+.search-box img { width:20px; height:20px; }*/
+
+/* Header 右側 */
+.header-right { display:flex; align-items:center; gap:10px; }
+.header-right a { margin-left:0; }
+.header-right img { width:28px; height:28px; }
+
+/* -------- 服務條款 -------- */
+.container { max-width:900px; margin:30px auto 100px; padding:20px; background:#fff; border-radius:15px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+h1, h2 { color:#4da6ff; }
+h1 { text-align:center; margin-bottom:30px; }
+ul { margin-left:20px; }
+
+/* -------- Footer -------- */
+footer { background:#333; color:#fff; padding:20px; display:flex; flex-wrap:wrap; gap:20px; justify-content:space-between; }
+footer div { min-width:150px; text-align:left; }
+footer h4 { margin-bottom:5px; }
+footer a { color:#fff; display:block; margin:3px 0; }
+.social-icons a { display:inline-block; margin-right:10px; }
+.social-icons a img { width:24px; height:24px; vertical-align:middle; }
+
+/* -------- 浮動按鈕 -------- */
+.floating-btn {
+  position:fixed; right:20px; bottom:150px; background:#00c300; color:#fff;
+  padding:12px 20px; border-radius:25px; font-weight:bold; cursor:pointer;
+  box-shadow:0 4px 8px rgba(0,0,0,0.3); transition: background 0.3s, transform 0.2s;
+}
+.floating-btn:hover { background:#009900; transform: translateY(-2px); }
+
+/* -------- 響應式 -------- */
+@media (max-width: 768px) {
+  .header-left, .header-center, .header-right { width:100%; justify-content:space-between; }
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="main-header">
+  <div class="header-left">
+    <a href="../index.html" class="home-btn"><img src="/image/fish (1).png" alt="首頁"></a>
+    <div class="dropdown">
+      <button class="drop-btn"><img src="/image/fish.png"> 全部商品</button>
+      <div class="drop-menu">
+        <ul>
+        <li><a href="../product/product-fish1.html">全部</a></li>
+        <li><a href="../product/Guppies.html">孔雀魚</a></li>
+        <li><a href="../product/product-fish2.html">球魚|滿魚</a></li>
+        <li><a href="../product/product-fish3.html">磚魚|螢光仙子</a></li>
+        <li><a href="../product/product-fish4.html">燈魚</a></li>
+        <li><a href="../product/product-fish5.html">鼠魚|異型|底棲魚</a></li>
+        <li><a href="../product/product-fish6.html">錦鯉</a></li>
+        <li><a href="../product/product-fish7.html">金魚</a></li>
+        <li><a href="../product/product-fish8.html">神仙|七彩神仙|慈鯛</a></li>
+        <li><a href="../product/product-fish9.html">大型魚|肉食魚|其他</a></li>
+        <li><a href="../product/product-fish10.html">米蝦|螺|水草</a></li>
+        <li><a href="../product/product-fish11.html">小型魚類</a></li>
+        <li><a href="../product/product-fish12.html">底棲魚類</a></li>
+        <li><a href="../product/product-fish13.html">精選商品</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="drop-btn"><img src="/image/fish.png"> 熱門商品</button>
+      <div class="drop-menu"><ul><li><a href="../product/product-fish2.html">球魚|滿魚</a></li><li><a href="../product/product-fish3.html">磚魚|螢光仙子</a></li></ul></div>
+    </div>
+    <div class="dropdown">
+      <button class="drop-btn"><img src="/image/fish.png"> 精選魚類</button>
+     <div class="drop-menu"><ul><li><a href="../product/product-fish4.html">燈魚</a></li><li><a href="../product/product-fish5.html">鼠魚|異型|底棲魚</a></li></ul></div>
+    </div>
+  </div>
+ <!-- <div class="header-center">
+    <div class="search-box">
+      <input type="text" placeholder="想找什麼呢?" id="searchInput">
+      <button id="searchBtn"><img src="https://files.catbox.moe/br4tv3.png" alt="搜尋"></button>
+    </div>
+  </div>!-->
+  <div class="header-right">
+   <a href="#"><img src="/image/user (1).png" alt="會員登入"></a>
+    <a href="#"><img src="/image/shopping-cart.png" alt="購物車"></a>
+  </div>
+</div>
+  
+
+  
+  
+  
+<!-- 服務條款內容 -->
+<div class="container">
+  <h1>服務條款-會員服務及權利義務</h1>
+
+  <h2>1. 服務使用</h2>
+  <p>歡迎您光臨日日水族魚場網站（以下簡稱「本網站」）。本網站由『日日水族魚場』運營，為您提供商品銷售與配送、活動資訊發布及會員權益通知等服務。</p>
+
+  <h2>2. 購買須知</h2>
+  <p>商品性質較為特殊，日日水族魚場將負責商品運送之風險。請於收到包裹1小時內開箱並錄影，如有魚損、缺件或其他狀況請於1小時內聯繫官方Line客服並傳送完整之開箱影片，魚損或缺件經由客服確認後於1-2個工作日將金額以紅利點數之形式匯入會員帳號中，可於下回購買時做折抵</p>
+
+  <h2>3. 會員特權</h2>
+  <p>成為日日水族魚場的網路會員後，您將享有以下福利：定期接收最新商品資訊、商店更新及促銷活動通知</p>
+
+  <h2>4. 同意條款</h2>
+  <p>使用本網站服務即表示您已閱讀、理解並同意所有使用條款。如有條款變更，我們將在本網站公告，請您注意更新。如果您不同意變更的內容，請停止使用本網站服務。繼續使用即表示您接受修改後的條款。</p>
+
+  <h2>5. 未成年使用者</h2>
+  <p>若您未滿二十歲，應由您的法定代理人閱讀、理解並同意本條款後方可使用或繼續使用本網站。使用或繼續使用本網站即表示您的法定代理人已同意本條款及其後的修改。</p>
+
+  <h2>6. 服務修改與終止</h2>
+  <p>本公司保留修改或終止任何違反法律規定或雙方約定的會員帳戶服務的權利。我們也有權隨時修改或更新本條款，並將變更內容於本網站公告。</p>
+  
+  <h1>客戶帳號、密碼與安全</h1>
+  
+  <h2>1. 註冊資料</h2>
+  <p>註冊成為網路會員時，請提供準確的資料。如發現資料不實或未更新，日日水族魚場保留隨時暫停或終止您的會員資格及服務使用權的權利。使用LINE登入時會存取登入 LINE 帳號之 Email 地址做為登入識別用途 。</p>
+
+  <h2>2.帳號安全</h2>
+  <p>請妥善保管您的帳號及密碼，每次使用後請記得登出。如發現帳號或密碼遺失或其他安全問題，請立即通知本網站並修改。日日水族魚場不對因帳號或密碼洩露而造成的損失負責。</p>
+
+  <h1>智慧財產權</h1>
+  <p>本網站的軟體、程式及所有內容，除非經本網站或相關權利人合法授權，皆不得擅自使用、修改、複製或公開播送。若有違反，應對本公司承擔損害賠償責任。</p>
+  <h1>網路會員隱私權保障</h1>
+
+  <h2>1.資料蒐集與利用</h2>
+  <p>您同意日日水族魚場蒐集、處理及利用您的個人資料用於行銷、客戶管理及網路購物等業務。
+
+  <h2>個人資料保護</h2>
+  <p>本公司除非法律要求或司法機關命令，否則不會公開您的個人資料。若獲得您的書面同意，我們才會公開相關資料。</p>
+
+  <h2>隱私保障</h2>
+  <p>您同意接受日日水族魚場的「隱私權保障」，我們將採取合理措施保護您的個人資料安全。</p>
+
+  <h1>暫停服務</h1>
+  <h2>1.服務暫停或中斷</h2>
+  <p>本公司可能因以下情況暫停或中斷服務：
+>軟硬體維護或更新
+>使用者違反法律或本使用條款
+>天災或其他不可抗力事件
+>非本公司控制範圍內的其他情況</p>
+  <h2>2.預知通知</h2>
+  <p>如可預見服務中斷或暫停，我們將提前通知會員。</p>
+  <h1>本條款之效力</h1>
+  <p>本條款若有部分無效，其他部分的效力不受影響。</p>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div><h4>服務條款</h4>
+    <a href="../FOOTER/about-us.html">條款內容</a>
+    <a href="../FOOTER/about-us1.html">關於我們</a></div>
+  <div><h4>客戶留言板</h4>
+    <a href="#">留言內容</a></div>
+  <div>
+    <h4>最新消息</h4>
+    <a href="../FOOTER/Activity1.html">活動1</a>
+    <a href="../FOOTER/Activity2.html">活動2</a>
+  </div>
+  <div>
+    <h4>全部商品</h4>
+    <a href="../product/product-fish1.html">全部商品</a>
+  </div>
+  <div>
+    <h4>會員服務</h4>
+    <a href="../HEAD/member.html">會員中心</a>
+    <a href="#">訂購紀錄</a>
+  </div>
+  <div class="social-icons">
+    <h4>社群連結</h4>
+    <a href="https://www.facebook.com/profile.php?id=61555847716122"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="FB"></a>
+    <a href="https://www.instagram.com/zz.aqua.tw?fbclid=IwY2xjawPnH2FleHRuA2FlbQIxMABicmlkETExMjVzOUxibnZHOVZOb3lZc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHkKcuKgiVYETFBe3t2Tz7DoJeR7DrEQZ7KZER-MTv539Nca7QJFao5yt77wO_aem_hOfuhTdbvwHk-7lJqS7NAg"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="IG"></a>
+    <a href="https://www.google.com/maps/place/%E6%97%A5%E6%97%A5%E6%B0%B4%E6%97%8F%E6%BC%81%E5%A0%B4%EF%BC%88%E4%BF%AE%E8%BB%8A%E5%BB%A0%E5%85%A7%EF%BC%89%E2%80%94%E5%AD%94%E9%9B%80%E9%AD%9A%2F%E9%8C%A6%E9%AF%89%2F%E9%87%91%E9%AD%9A%2F%E7%87%88%E9%AD%9A%2F%E9%BE%8D%E9%AD%9A%2F%E8%A7%80%E8%B3%9E%E9%AD%9A/data=!4m2!3m1!1s0x0:0x7b5f188bdb001bab?sa=X&ved=1t:2428&hl=zh-Hant-TW&ictx=111"><img src="/image/map.png" alt="地圖"></a>
+  </div>
+</footer>
+
+<!-- 浮動聯絡按鈕 -->
+<a href="#" class="floating-btn">
+  <img src="/image/line.png" alt="contact" style="width:20px; vertical-align:middle; margin-right:6px;">
+  
+</a>
+
+<!-- JS 功能 -->
+<script>
+// Dropdown
+const dropdowns=document.querySelectorAll('.dropdown');
+dropdowns.forEach(drop=>{
+  const btn=drop.querySelector('.drop-btn'); 
+  const menu=drop.querySelector('.drop-menu');
+  btn.addEventListener('click', e=>{
+    e.stopPropagation();
+    dropdowns.forEach(d=>{ 
+      if(d!==drop){ 
+        d.querySelector('.drop-menu').classList.remove('show'); 
+        d.querySelector('.drop-btn').classList.remove('active'); 
+      }
+    });
+    menu.classList.toggle('show'); 
+    btn.classList.toggle('active');
+  });
+});
+document.addEventListener('click', ()=>{ 
+  dropdowns.forEach(d=>{ 
+    d.querySelector('.drop-menu').classList.remove('show'); 
+    d.querySelector('.drop-btn').classList.remove('active'); 
+  }); 
+});
+document.querySelectorAll('.drop-menu').forEach(menu=>menu.addEventListener('click', e=>e.stopPropagation()));
+
+// 搜尋功能 (只影響首頁商品頁可改)
+/*const products=document.querySelectorAll('.product-card');
+const searchInput=document.getElementById('searchInput');
+const searchBtn=document.getElementById('searchBtn');
+function filterProducts(){
+  const keyword=searchInput.value.trim().toLowerCase();
+  products.forEach(card=>{
+    const title=card.querySelector('h4').textContent.toLowerCase();
+    card.style.display = (keyword==='' || title.includes(keyword)) ? 'block':'none';
+  });
+}
+if(searchBtn && searchInput){
+  searchBtn.addEventListener('click', filterProducts);
+  searchInput.addEventListener('keyup', filterProducts);
+}*/
+</script>
+
+</body>
+</html>
